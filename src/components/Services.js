@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Joi from "joi";
 
-function Orders() {
-    const [orders, setOrders] = useState([]);
+function Services() {
+    const [services, setServices] = useState([]);
     const [price, setPrice] = useState(0);
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -36,13 +36,13 @@ function Orders() {
         order.id = Math.random() + '';
         order.date = new Date().toLocaleString();
 
-        const updated = [...orders, order];
-        setOrders(updated);
+        const updated = [...services, order];
+        setServices(updated);
     }
 
     return (
         <>
-            <h2 className="text-center mt-3">Orders</h2>
+            <h2 className="text-center mt-3">Services</h2>
 
             <div className="d-flex p-4 border">
                 <input value={price}
@@ -84,7 +84,7 @@ function Orders() {
                 </thead>
                 <tbody>
                     {
-                        orders.map(order =>
+                        services.map(order =>
                             <tr key={order.id}>
                                 <td>{order.date}</td>
                                 <td>{order.price}</td>
@@ -101,4 +101,4 @@ function Orders() {
     );
 }
 
-export default Orders;
+export default Services;
