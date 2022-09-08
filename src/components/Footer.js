@@ -3,7 +3,7 @@ function About() {
 
 
         <div className="text-center p-3">
-         @ 2020 Copyright 2022 - George Khananaev
+         © 2022 George Khananaev. All rights reserved.
         </div>
 
 
