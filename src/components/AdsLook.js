@@ -1,4 +1,4 @@
-function AdsComp(props) {
+function AdsLook(props) {
 
     const openInNewTab = url => {
         window.open(url, '_blank');
@@ -29,4 +29,4 @@ function AdsComp(props) {
     );
 }
 
-export default AdsComp;
+export default AdsLook;

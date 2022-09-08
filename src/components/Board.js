@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AdsComp from "./AdsComp";
+import AdsLook from "./AdsLook";
 import Banner from "./Banner";
 import SearchBar from "./SearchBar";
 import "./Board.css";
@@ -121,7 +121,7 @@ function Menu() {
     {/* looping all values */}
       <div className={display}>
         {offers.map((offers) => (
-          <AdsComp key={offers.id} data={offers} />
+          <AdsLook key={offers.id} data={offers} />
         ))}
 
 
