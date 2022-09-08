@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Services from './components/Services';
 import About from './components/About';
+import Footer from './components/Footer';
+
 
 function App() {
     return (
@@ -15,6 +17,10 @@ function App() {
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
             </Routes>
+
+            <div className="col">
+        <Footer/>
+      </div>
         </>
     );
 }

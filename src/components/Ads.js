@@ -1,9 +1,9 @@
 function Ads(props) {
 
-    function handleClick(dishName) {
-        console.log(`You selected: ${dishName}`);
-    }
-
+    const openInNewTab = url => {
+        window.open(url, '_blank');
+      };
+    
     const data = props.data;
 
     return (
@@ -22,7 +22,7 @@ function Ads(props) {
                 <div>
                 <i className="bi bi-house"></i>: {data.address}
                 </div>
-                    <button onClick={() => handleClick(data.name)} className="mt-3 btn btn-primary">Visit Website</button>
+                    <button onClick={() => openInNewTab(data.url)} className="mt-3 btn btn-primary">Visit Website</button>
                 </div>
             </div>
         </>
