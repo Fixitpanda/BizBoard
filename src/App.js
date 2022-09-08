@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Menu from './components/Menu';
-import Services from './components/Services';
-import About from './components/About';
-import Footer from './components/Footer';
+import Header from './Components/Header';
+import Menu from './Components/Board';
+import Services from './Components/Services';
+import About from './Components/About';
+import Footer from './Components/Footer';
 
 
 function App() {

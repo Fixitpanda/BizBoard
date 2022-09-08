@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Ads from "./Ads";
+import AdsComp from "./AdsComp";
 import Banner from "./Banner";
-import "./Menu.css";
+import SearchBar from "./SearchBar";
+import "./Board.css";
 
 
 function Menu() {
@@ -65,20 +66,19 @@ function Menu() {
         url: "https://github.com/fixitpanda",
       },
   ];
+  
+  const [offers, setOffers] = useState(ads);
 
-  const [origData, setOrigData] = useState(ads.name);
-  const [offers, setOffers] = useState(ads.name);
+    function searchOffers(value) {
+        let result = [...ads];
+        if (value.length > 0) {
+            result = ads.filter(offer =>
+                offer.name.toLowerCase().includes(value.toLowerCase())
+            )
+        }
 
-  function searchOffers(value) {
-      let result = [...origData];
-      if (value.length > 0) {
-          result = origData.filter(offer =>
-              offer.location.toLowerCase().includes(value.toLowerCase())
-          )
-      }
-
-      setOffers(result);
-  }
+        setOffers(result);
+    }
 
 
 
@@ -98,7 +98,6 @@ function Menu() {
         <Banner/>
       </div>
       <div className="d-flex justify-content-between container px-5 pt-2">
-        <div className="col-6">Search</div>
         <div>
           <button
             onClick={(e) => setDisplay("container list")}
@@ -114,17 +113,21 @@ function Menu() {
           </button>
           
         </div>
+
+        <div className="col-3"><SearchBar search={searchOffers}/></div>
       </div>
 
 
     {/* looping all values */}
       <div className={display}>
-        {ads.map((ads) => (
-          <Ads key={ads.id} data={ads} />
+        {offers.map((offers) => (
+          <AdsComp key={offers.id} data={offers} />
         ))}
 
-      </div>
 
+
+      </div>
+     
       
 
     </>
