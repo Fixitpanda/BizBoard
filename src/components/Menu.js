@@ -2,7 +2,7 @@ import { useState } from "react";
 import Ads from "./Ads";
 import Banner from "./Banner";
 import "./Menu.css";
-import Footer from "./Footer";
+
 
 function Menu() {
   const ads = [
@@ -66,6 +66,22 @@ function Menu() {
       },
   ];
 
+  const [origData, setOrigData] = useState(ads.name);
+  const [offers, setOffers] = useState(ads.name);
+
+  function searchOffers(value) {
+      let result = [...origData];
+      if (value.length > 0) {
+          result = origData.filter(offer =>
+              offer.location.toLowerCase().includes(value.toLowerCase())
+          )
+      }
+
+      setOffers(result);
+  }
+
+
+
 //detects if your resolution mobile like or not
   function Mobile() {
     if (window.innerWidth < 768) {
@@ -81,7 +97,8 @@ function Menu() {
       <div className="col">
         <Banner/>
       </div>
-      <div className="d-flex justify-content-between px-5 pt-2">
+      <div className="d-flex justify-content-between container px-5 pt-2">
+        <div className="col-6">Search</div>
         <div>
           <button
             onClick={(e) => setDisplay("container list")}
@@ -95,8 +112,10 @@ function Menu() {
           >
             <i className="bi-grid-3x3-gap-fill"></i>
           </button>
+          
         </div>
       </div>
+
 
     {/* looping all values */}
       <div className={display}>
@@ -105,6 +124,8 @@ function Menu() {
         ))}
 
       </div>
+
+      
 
     </>
   );
