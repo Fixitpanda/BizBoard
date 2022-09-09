@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AdsLook from "./AdsLook";
 import Banner from "./Banner";
 import SearchBar from "./SearchBar";
@@ -81,16 +81,47 @@ function Menu() {
     }
 
 
-
-//detects if your resolution mobile like or not
-  function Mobile() {
-    if (window.innerWidth < 768) {
-      return"container list";
+// getting screen width and height
+function getWindowDimensions() {
+      const { innerWidth: width, innerHeight: height } = window;
+      return {
+        width,
+        height
+      };
     }
-    return "container grid";
-  }
 
-  const [display, setDisplay] = useState(Mobile);
+
+
+    // using width and listening in real time to resolution change
+    function useWindowDimensions() {
+      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    
+      useEffect(() => {
+        function handleResize() {
+          setWindowDimensions(getWindowDimensions());
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+      
+      // bootstrap css values
+      let list = "container list",
+        grid = "container grid",
+        mobile_search_size = "col-7",
+        desktop_search_size = "col-3";
+          
+
+      if (windowDimensions["width"] < 768) {
+       // mobile
+        return [list, mobile_search_size];
+      }
+          // desktop
+        return [grid, desktop_search_size];
+    
+    }   
+
+  const [display, setDisplay] = useState(useWindowDimensions()[0]);
 
   return (
     <>
@@ -114,7 +145,7 @@ function Menu() {
           
         </div>
 
-        <div className="col-3"><SearchBar search={searchOffers}/></div>
+        <div className={useWindowDimensions()[1]}><SearchBar search={searchOffers}/></div>
       </div>
 
 

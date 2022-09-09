@@ -6,13 +6,13 @@ import "./Banner.css";
 
 function Banner() {
     var settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 1200,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000
+      autoplaySpeed: 4000
     };
     
     return (

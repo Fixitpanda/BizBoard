@@ -4,30 +4,52 @@ function About() {
       <div>
         <h3 className="">About us</h3>
         <p className="p-3 col-11">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
+          Fringilla urna porttitor rhoncus dolor. Cursus euismod quis viverra
+          nibh cras pulvinar. Sit amet dictum sit amet justo donec enim. Egestas
+          pretium aenean pharetra magna ac. Eget mauris pharetra et ultrices
+          neque ornare aenean. Nibh sed pulvinar proin gravida hendrerit lectus
+          a. Praesent semper feugiat nibh sed. Lorem ipsum dolor sit amet.
+          Malesuada proin libero nunc consequat interdum varius sit amet mattis.
+          Augue eget arcu dictum varius duis at consectetur. Aliquet risus
+          feugiat in ante metus dictum at tempor. Odio aenean sed adipiscing
+          diam donec adipiscing tristique risus nec. Mauris ultrices eros in
+          cursus turpis massa tincidunt dui. Amet aliquam id diam maecenas
+          ultricies mi eget mauris. Ante in nibh mauris cursus mattis. Aliquam
+          sem fringilla ut morbi. Habitant morbi tristique senectus et netus et
+          malesuada fames.
         </p>
         <p className="p-3 col-11">
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don't look even slightly believable.
-          If you are going to use a passage of Lorem Ipsum, you need to be sure
-          there isn't anything embarrassing hidden in the middle of text. All
-          the Lorem Ipsum generators on the Internet tend to repeat predefined
-          chunks as necessary, making this the first true generator on the
-          Internet. It uses a dictionary of over 200 Latin words, combined with
-          a handful of model sentence structures, to generate Lorem Ipsum which
-          looks reasonable. The generated Lorem Ipsum is therefore always free
-          from repetition, injected humour, or non-characteristic words etc.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. At
+          imperdiet dui accumsan sit amet nulla. Enim nec dui nunc mattis. Fusce
+          ut placerat orci nulla pellentesque dignissim enim sit amet. Egestas
+          pretium aenean pharetra magna ac placerat vestibulum. Ultrices
+          tincidunt arcu non sodales neque sodales ut. Sollicitudin ac orci
+          phasellus egestas tellus rutrum tellus pellentesque eu. Eget sit amet
+          tellus cras adipiscing enim eu. Adipiscing diam donec adipiscing
+          tristique risus nec. Ut faucibus pulvinar elementum integer enim neque
+          volutpat ac tincidunt. Ut tellus elementum sagittis vitae et leo. Id
+          volutpat lacus laoreet non curabitur gravida arcu ac tortor. Sed
+          vulputate odio ut enim blandit volutpat maecenas. Commodo odio aenean
+          sed adipiscing diam donec. Viverra maecenas accumsan lacus vel
+          facilisis volutpat est velit. Commodo quis imperdiet massa tincidunt
+          nunc. Purus in massa tempor nec feugiat nisl pretium fusce id. Nulla
+          facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Diam
+          volutpat commodo sed egestas. Vestibulum sed arcu non odio euismod
+          lacinia at quis risus. Varius vel pharetra vel turpis nunc eget lorem
+          dolor. Placerat orci nulla pellentesque dignissim. Tempus imperdiet
+          nulla malesuada pellentesque elit eget gravida. Pharetra convallis
+          posuere morbi leo urna molestie at elementum. Convallis aenean et
+          tortor at risus viverra adipiscing at in. Eu mi bibendum neque
+          egestas. Lacus suspendisse faucibus interdum posuere. Natoque
+          penatibus et magnis dis parturient montes nascetur ridiculus mus. Eu
+          lobortis elementum nibh tellus molestie. Fermentum dui faucibus in
+          ornare quam viverra orci sagittis eu. Non diam phasellus vestibulum
+          lorem. Vel fringilla est ullamcorper eget nulla facilisi etiam. Ac
+          placerat vestibulum lectus mauris ultrices eros. Risus at ultrices mi
+          tempus imperdiet. Luctus accumsan tortor posuere ac ut consequat
+          semper viverra. Ac turpis egestas integer eget aliquet nibh praesent
+          tristique. Dui id ornare arcu odio ut sem nulla pharetra diam.
         </p>
       </div>
 
@@ -49,7 +71,7 @@ function About() {
                     focusable="false"
                   >
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
+                    <rect width="100%" height="100%" fill="#14595c" />
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                       Thumbnail
                     </text>
@@ -67,11 +89,9 @@ function About() {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Connect on LinkedIn
                         </button>
-                        
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -89,7 +109,7 @@ function About() {
                     focusable="false"
                   >
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
+                    <rect width="100%" height="100%" fill="#14595c" />
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                       Thumbnail
                     </text>
@@ -107,54 +127,9 @@ function About() {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Connect on LinkedIn
                         </button>
-                        
                       </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-       
-
-            
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg
-                    class="bd-placeholder-img card-img-top"
-                    width="100%"
-                    height="225"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    aria-label="Placeholder: Thumbnail"
-                    preserveAspectRatio="xMidYMid slice"
-                    focusable="false"
-                  >
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
-                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                      Thumbnail
-                    </text>
-                  </svg>
-
-                  <div class="card-body">
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          View
-                        </button>
-                        
-                      </div>
-
                     </div>
                   </div>
                 </div>
@@ -173,7 +148,7 @@ function About() {
                     focusable="false"
                   >
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
+                    <rect width="100%" height="100%" fill="#14595c" />
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                       Thumbnail
                     </text>
@@ -191,11 +166,48 @@ function About() {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Connect on LinkedIn
                         </button>
-                        
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg
+                    class="bd-placeholder-img card-img-top"
+                    width="100%"
+                    height="225"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice"
+                    focusable="false"
+                  >
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#14595c" />
+                    <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                      Thumbnail
+                    </text>
+                  </svg>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Connect on LinkedIn
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -213,7 +225,7 @@ function About() {
                     focusable="false"
                   >
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
+                    <rect width="100%" height="100%" fill="#14595c" />
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                       Thumbnail
                     </text>
@@ -231,11 +243,9 @@ function About() {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Connect on LinkedIn
                         </button>
-                        
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -253,7 +263,7 @@ function About() {
                     focusable="false"
                   >
                     <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#55595c" />
+                    <rect width="100%" height="100%" fill="#14595c" />
                     <text x="50%" y="50%" fill="#eceeef" dy=".3em">
                       Thumbnail
                     </text>
@@ -271,11 +281,9 @@ function About() {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Connect on LinkedIn
                         </button>
-                        
                       </div>
-
                     </div>
                   </div>
                 </div>
