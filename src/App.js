@@ -13,6 +13,7 @@ import ScrollToTop from './Components/ScrollToTop';
 function App() {
     return (
         <>
+            <BrowserRouter basename="/biz-ad-board">
             <Header name="BizAds - Board" />
             <Routes>
                 <Route path='/' element={<Menu />} />
@@ -21,6 +22,7 @@ function App() {
             </Routes>
             <ScrollToTop/>
             <Footer/>
+            </BrowserRouter>
         </>
     );
 }
