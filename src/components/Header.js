@@ -3,7 +3,7 @@ function Header(props) {
   return (
     <nav className="navbar navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/biz-ad-board">
           <i className="bi bi-shop me-3"></i>
           {props.name}
         </a>
