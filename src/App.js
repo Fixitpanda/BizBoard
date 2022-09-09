@@ -15,7 +15,7 @@ function App() {
         <>
             <Header name="BizAds - Board" />
             <Routes>
-                <Route path='/home' element={<Menu />} />
+                <Route path='/' element={<Menu />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
             </Routes>
