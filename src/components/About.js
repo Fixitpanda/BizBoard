@@ -16,11 +16,24 @@ function About() {
           looks reasonable. The generated Lorem Ipsum is therefore always free
           from repetition, injected humour, or non-characteristic words etc.
         </p>
+        <p className="p-3 col-11">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet. It uses a dictionary of over 200 Latin words, combined with
+          a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable. The generated Lorem Ipsum is therefore always free
+          from repetition, injected humour, or non-characteristic words etc.
+        </p>
       </div>
 
       <div>
         <h3 className="py-3">Our Team</h3>
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
@@ -58,7 +71,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>
@@ -98,7 +111,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>
@@ -141,7 +154,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>
@@ -182,7 +195,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>
@@ -222,7 +235,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>
@@ -262,7 +275,7 @@ function About() {
                         </button>
                         
                       </div>
-                      <small class="text-muted">9 mins</small>
+
                     </div>
                   </div>
                 </div>

@@ -13,13 +13,13 @@ import ScrollToTop from './Components/ScrollToTop';
 function App() {
     return (
         <>
-            <ScrollToTop/>
             <Header name="BizAds - Board" />
             <Routes>
                 <Route path='/' element={<Menu />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
             </Routes>
+            <ScrollToTop/>
             <Footer/>
         </>
     );

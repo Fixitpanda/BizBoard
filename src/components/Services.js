@@ -42,9 +42,9 @@ function Services() {
 
     return (
         <>
-            <h2 className="text-center mt-3">Services</h2>
+            <h2 className="text-center mt-3 container">Services</h2>
 
-            <div className="d-flex p-4 border">
+            <div className="d-flex p-4 border container">
                 <input value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     className="form-control me-2" type="number"
@@ -69,9 +69,9 @@ function Services() {
                 <button onClick={addOrder}
                     className="btn btn-primary">Add</button>
             </div>
-            <div className="text-danger">{addErr}</div>
+            <div className="text-danger ">{addErr}</div>
 
-            <table className="table table-hover">
+            <table className="table table-hover container">
                 <thead>
                     <tr>
                         <th>Date</th>

@@ -43,7 +43,7 @@ function Menu() {
         category: "Chicken",
         phone: "054-1234444",
         address: "Some street 5, somewhere, over the rainbow",
-        imageUrl: "https://cdn.pixabay.com/photo/2014/07/31/20/48/bird-406776_960_720.jpg",
+        imageUrl: "https://cdn.pixabay.com/photo/2021/11/12/09/11/elephants-6788416_960_720.jpg",
         url: "https://github.com/Fixitpanda/.xlsx-downloader-with-progress",
       },
       {
