@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header';
-import Menu from './Components/Board';
+import Home from './Components/Home';
 import Services from './Components/Services';
 import About from './Components/About';
 import Footer from './Components/Footer';
@@ -15,7 +15,7 @@ function App() {
         <>
             <Header name="BizAds - Board" />
             <Routes>
-                <Route path='/' element={<Menu />} />
+                <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/services' element={<Services />} />
             </Routes>

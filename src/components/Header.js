@@ -3,10 +3,10 @@ function Header(props) {
   return (
     <nav className="navbar navbar-dark bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/biz-ad-board">
+        <Link to="/" className="navbar-brand">
           <i className="bi bi-shop me-3"></i>
           {props.name}
-        </a>
+        </Link>
         <ul className="navbar-nav flex-row">
           <li className="nav-item px-2">
             <Link to="/services" className="nav-link text-light mx-1">
