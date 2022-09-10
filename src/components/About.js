@@ -2,7 +2,7 @@ function About() {
   return (
     <div className="container py-3">
       <div>
-        <h3 className="">About us</h3>
+        <h2>About us</h2>
         <p className="p-3 col-11">
           Fringilla urna porttitor rhoncus dolor. Cursus euismod quis viverra
           nibh cras pulvinar. Sit amet dictum sit amet justo donec enim. Egestas

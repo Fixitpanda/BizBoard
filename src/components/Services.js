@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Joi from "joi";
 
+
 function Services() {
     const [services, setServices] = useState([]);
     const [price, setPrice] = useState(0);
@@ -46,68 +47,125 @@ function Services() {
 
  
     <div className="container py-3">
-    <h3>Our Services</h3>
+   <h2>Our Services</h2>
     <div className="border rounded m-3 p-3 container">
-    <div className="row bg-pr text-center py-3">
-        <div className="col-md-4">
-            <div className="box">
-                <div className="our-services settings">
-                    <div className="icon"> <img src="https://i.imgur.com/6NKPrhO.png" alt="image1" /> </div>
-                    <h4>Settings</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="box">
-                <div className="our-services speedup">
-                    <div className="icon"> <img src="https://i.imgur.com/KMbnpFF.png" alt="image2" /> </div>
-                    <h4>Speedup</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="box">
-                <div className="our-services privacy">
-                    <div className="icon"> <img src="https://i.imgur.com/AgyneKA.png" alt="image3" /> </div>
-                    <h4>Privacy</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="row text-center p-3">
-        <div className="col-md-4 py-3">
-            <div className="box">
-                <div className="our-services backups">
-                    <div className="icon"> <img src="https://i.imgur.com/vdH9LKi.png" alt="image4" /> </div>
-                    <h4>Backups</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-                </div>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="box">
-                <div className="our-services ssl">
-                    <div className="icon"> <img src="https://i.imgur.com/v6OnUqu.png" alt="image5" /> </div>
-                    <h4>SSL secured</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="box">
-                <div className="our-services database">
-                    <div className="icon"> <img src="https://i.imgur.com/VzjZw9M.png" alt="image6" /> </div>
-                    <h4>Database</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+<div className="container px-4 py-5" id="hanging-icons">
+  <h3 className="pb-2 border-bottom">Our Packages</h3>
+  <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div className="col d-flex align-items-start">
+      <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+      <i className="bi bi-pentagon"></i>
+    
 
-    <div className="d-flex p-4 border container">
+
+      </div>
+      <div>
+
+        
+        <h3>Title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="##" className="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div className="col d-flex align-items-start">
+      <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+      <i className="bi bi-pentagon"></i>
+
+      </div>
+      <div>
+        <h3>Title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="##" className="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+    <div className="col d-flex align-items-start">
+      <div className="icon-square bg-light text-dark flex-shrink-0 me-3">
+      <i className="bi bi-pentagon"></i>
+
+      </div>
+      <div>
+        <h3>Title</h3>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="##" className="btn btn-primary">
+          Primary button
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div className="container px-4 py-5" id="icon-grid">
+    <h3 className="pb-2 border-bottom">Top Features</h3>
+
+    
+
+    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div className="col d-flex align-items-start">
+      <i className="bi bi-check-lg px-1"></i>        <div>
+          <h4 className="fw-bold mb-0">Title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    {/* end */}
+
+<div className="container" >
+    <h3 className="pb-2 border-bottom">Add Your Service</h3>
+    <div className="d-flex p-4 border">
                 <input value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     className="form-control me-2" type="number"
@@ -162,6 +220,8 @@ function Services() {
             </table>
     
 </div>
+</div>
+
 </div>
     
 
