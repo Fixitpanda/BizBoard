@@ -61,7 +61,7 @@ function Services() {
                     probably just keep going until we run out of words.
                   </p>
                   <a href="##" className="btn btn-primary">
-                    Primary button
+                    Button
                   </a>
                 </div>
               </div>
@@ -77,7 +77,7 @@ function Services() {
                     probably just keep going until we run out of words.
                   </p>
                   <a href="##" className="btn btn-primary">
-                    Primary button
+                    Button
                   </a>
                 </div>
               </div>
@@ -93,7 +93,7 @@ function Services() {
                     probably just keep going until we run out of words.
                   </p>
                   <a href="##" className="btn btn-primary">
-                    Primary button
+                    Button
                   </a>
                 </div>
               </div>
@@ -189,7 +189,7 @@ function Services() {
 
           {/* end */}
 
-          <div className="container">
+          <div className="container bg-light rounded p-3">
             <h3 className="pb-2">Add Your Service</h3>
             <div className="d-flex p-4 border">
               <input

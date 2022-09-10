@@ -1,7 +1,6 @@
 function AdsLook(props) {
-
-    const openInNewTab = url => {
-        window.open(url, '_blank');
+    const openUrl = url => {
+        window.open(url, '_self');
       };
     
     const data = props.data;
@@ -22,7 +21,7 @@ function AdsLook(props) {
                 <div>
                 <i className="bi bi-house"></i>: {data.address}
                 </div>
-                    <button onClick={() => openInNewTab(data.url)} className="mt-3 btn btn-primary">Visit Website</button>
+                    <button onClick={() => openUrl(data.url)} className="mt-3 btn btn-primary">Visit Website</button>
                 </div>
             </div>
         </>
