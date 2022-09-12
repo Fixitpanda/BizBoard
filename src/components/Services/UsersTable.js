@@ -3,13 +3,14 @@ import Selections from "./Selections";
 function UsersTable(props) {
     /*
     props = {
-        users: [...]
+        services: [...]
     }
     */
 
-    function handleDelete(user) {
-        props.deleteUser(user);
+    function handleDelete(selectService) {
+        props.deleteUser(selectService);
     }
+
 
 
     return (
@@ -23,16 +24,16 @@ function UsersTable(props) {
             </thead>
             <tbody>
                 {
-                    props.users.map(user =>
-                        <tr key={user.id} className="bg-light">
+                    props.services.map(service =>
+                        <tr key={service.id} className="bg-light">
                             <td>
-                                <Selections type={user.selectService} />
+                                <Selections type={service.selectService} />
                             </td>
                             <td>
-                                <Selections type={user.status} />
+                                <Selections type={service.status} />
                             </td>
                             <td>
-                                <button onClick={() => handleDelete(user)} className="btn btn-default">
+                                <button onClick={() => handleDelete(service)} className="btn btn-default">
                                     <i className="bi-trash3"></i>
                                 </button>
                             </td>

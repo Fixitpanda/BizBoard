@@ -1,9 +1,10 @@
 function Message() {
     return (
         <div className="alert alert-warning">
-            No users to display.
+            No service been selected.
         </div>
     );
 }
+
 
 export default Message;

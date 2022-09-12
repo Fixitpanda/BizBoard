@@ -2,11 +2,11 @@ function Selections(props) {
 
     function getBadgeCSS() {
         switch (props.type) {
-            case 'active':
+            case 'Active':
                 return 'bg-success';
-            case 'expired':
+            case 'Pause':
                 return 'bg-warning';
-            case 'banned':
+            case 'Stop':
                 return 'bg-danger';
             default:
                 return 'bg-secondary';

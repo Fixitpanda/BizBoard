@@ -8,40 +8,34 @@ function SelectedServices() {
     // const setID = () => { idCount++; return idCount; };
 
     // state hook
-    const [usersData, setUsersData] = useState([]);
+    const [servicesData, setUsersData] = useState([]);
 
     // lifting state up
-    function addUser(newUser) {
-        newUser.id = Math.random() + '';
-        // newUser.status = 'active';
-
-        /*
-        const fruits = ['apple', 'orange'];
-        const fruits2 = [...fruits];
-        */
-
-        // js array push
-        // const updated = usersData.push(newUser);
-        // JS: spread operator ... > MDN
-        const updated = [...usersData, newUser];
+    function addService(newService) {
+        newService.id = Math.random() + '';
+        
+        const updated = [...servicesData, newService];
         setUsersData(updated);
+        
     }
 
-    function deleteUser(user) {
-        const updated = usersData.filter(userItem => userItem.id !== user.id);
+    function deleteUser(service) {
+        const updated = servicesData.filter(serviceItem => serviceItem.id !== service.id);
         setUsersData(updated);
     }
 
     return (
         <>
-            <ServicesHeader addUser={addUser} />
+            <ServicesHeader addService={addService} />
             {/* conditional rendering */}
             {
-                usersData.length === 0 &&
+                servicesData.length === 0 &&
                 <Message />
             }
-            <UsersTable users={usersData} deleteUser={deleteUser} />
+            
+            <UsersTable services={servicesData} deleteUser={deleteUser} />
         </>
+        
     );
 }
 

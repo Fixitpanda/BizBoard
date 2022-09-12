@@ -7,11 +7,25 @@ function ServicesHeader(props) {
     function handleBtnClick(e) {
         // forms
         e.preventDefault();
+        var emptyValue = 'Error, empty value';
 
-        props.addUser({
-            selectService: selectService,
-            status: status
-        });
+        if (selectService === "Select Service") {
+            console.log(emptyValue)
+        } else if (selectService === "") {
+            console.log(emptyValue)
+        } else if (status === "Select Status") {
+            console.log(emptyValue)
+        } else if (status === "") {
+            console.log(emptyValue)
+
+        } 
+        else {
+            props.addService({
+                selectService: selectService,
+                status: status
+                
+            }); 
+        }   
     }
 
     return (
@@ -24,6 +38,7 @@ function ServicesHeader(props) {
                         <form className="d-flex">
 
                             <select value={selectService} onChange={(e) => setServiceNameSelection(e.target.value)} className="form-select me-2">
+                                <option>Select Service</option>
                                 <option>One</option>
                                 <option>Two</option>
                                 <option>Three</option>
@@ -32,6 +47,7 @@ function ServicesHeader(props) {
                             </select>
 
                             <select value={status} onChange={(e) => setStatus(e.target.value)} className="form-select me-2">
+                                <option>Select Status</option>
                                 <option>Active</option>
                                 <option>Pause</option>
                                 <option>Stop</option>
