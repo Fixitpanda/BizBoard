@@ -1,4 +1,4 @@
-function Status(props) {
+function Selections(props) {
 
     function getBadgeCSS() {
         switch (props.type) {
@@ -20,4 +20,4 @@ function Status(props) {
     );
 }
 
-export default Status;
+export default Selections;

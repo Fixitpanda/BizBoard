@@ -1,4 +1,4 @@
-import Status from "./Status";
+import Selections from "./Selections";
 
 function UsersTable(props) {
     /*
@@ -16,9 +16,8 @@ function UsersTable(props) {
         <table className="table table-hover">
             <thead>
                 <tr>
-                    <th className="w-25">Name</th>
+                    <th className="w-25">Service Name</th>
                     <th className="w-25">Status</th>
-                    <th className="w-50">Email</th>
                     <th></th>
                 </tr>
             </thead>
@@ -26,11 +25,12 @@ function UsersTable(props) {
                 {
                     props.users.map(user =>
                         <tr key={user.id} className="bg-light">
-                            <td>{user.name}</td>
                             <td>
-                                <Status type={user.status} />
+                                <Selections type={user.selectService} />
                             </td>
-                            <td>{user.email}</td>
+                            <td>
+                                <Selections type={user.status} />
+                            </td>
                             <td>
                                 <button onClick={() => handleDelete(user)} className="btn btn-default">
                                     <i className="bi-trash3"></i>

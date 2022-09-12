@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Header from "./Header";
+import ServicesHeader from "./ServicesHeader";
 import Message from "./Message";
 import UsersTable from "./UsersTable";
 
-function Users() {
+function SelectedServices() {
     // let idCount = 0;
     // const setID = () => { idCount++; return idCount; };
 
@@ -34,7 +34,7 @@ function Users() {
 
     return (
         <>
-            <Header addUser={addUser} />
+            <ServicesHeader addUser={addUser} />
             {/* conditional rendering */}
             {
                 usersData.length === 0 &&
@@ -45,4 +45,4 @@ function Users() {
     );
 }
 
-export default Users;
+export default SelectedServices;
