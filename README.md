@@ -21,4 +21,4 @@ More features will be added soon.
 ## Copyrights / Credits
 
 * Images been downloaded from pixabay.com, check terms before using for any commercial use!
-* This is open source project, feel free to use my code for any commercial usage. Don't forget to give some credits ;).
+* This is open source project, feel free to use my code for any commercial usage. However, don't forget to give some credits ;)
