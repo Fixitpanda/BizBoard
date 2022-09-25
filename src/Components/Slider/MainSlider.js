@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Banner.css";
+import "./Slider.css";
 
-function Banner() {
-  var settings = {
+function SliderData() {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 1200,
@@ -16,15 +16,6 @@ function Banner() {
   return (
     <div className="bg-dark text-light text-center">
       <Slider {...settings}>
-        {/* <div style={{ 
-        backgroundImage: `url(${process.env.PUBLIC_URL + 'https://cdn.pixabay.com/photo/2013/04/02/19/54/playground-99509_960_720.jpg'})`,
-        backgroundRepeat: 'no-repeat', backgroundPosition: 'center',
-        width:'100%' ,
-        height: '500px'
-        }}>
-        Hello World
-        </div> */}
-
         <div className="slider-element">
           <h3>Hi, there...</h3>
         </div>
@@ -46,4 +37,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default SliderData;

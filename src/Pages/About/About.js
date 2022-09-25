@@ -56,7 +56,7 @@ function About() {
 
         <div className="text-center">
           <Link to="/" className="btn btn-primary">
-           Check More
+            Check More
           </Link>
         </div>
       </div>
