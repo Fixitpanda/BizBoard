@@ -9,13 +9,13 @@
 
 ## This is on going project!
 
-More features will be added soon.
+**More features will be added soon...**
 
 ###### What should you expect?
 
 1. Python (FastAPI) based backend.
-2. Full API Integration.
-3. User Panel
+2. Full API Integration. (All static data will be erased.)
+3. User Panel (Registration / Login / Control Panel)
 4. More pages (Probably)
 
 ## Copyrights / Credits
