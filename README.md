@@ -21,9 +21,7 @@ What should you expect?
 ## Copyrights / Credits
 
 * Images been downloaded from pixabay.com, check terms before using for any commercial use!
+* This is open source project, feel free to use my code for any commercial usage. However, don't forget to give some credits back ;)
 
-This is open source project, feel free to use my code for any commercial usage. However, don't forget to give some credits back ;)
-
-
-| Cheers! |
-| ------- |
+| Cheers!g |
+| -------- |
