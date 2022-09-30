@@ -73,7 +73,7 @@ function AllItems() {
                             className="btn btn-default display-type">
                             <i className="bi-grid-3x3-gap-fill"></i>
                         </button>
-                    </div>
+                    </div>g
 
 
 
