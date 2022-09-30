@@ -6,7 +6,7 @@ function SliderData() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1200,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -21,16 +21,16 @@ function SliderData() {
         </div>
 
         <div className="slider-element">
-          <h3>You can publish your shit here.</h3>
+          <h3>This is Open Source, Frontend + Backend project.</h3>
         </div>
         <div className="slider-element">
-          <h3>So let's do some shit together...</h3>
+          <h3>Frontend: React v18+ ,Backend: Python v3.10+ </h3>
         </div>
         <div className="slider-element">
-          <h3>Because almost any shit is possible...</h3>
+          <h3>Hopefully you'll enjoy using it...</h3>
         </div>
         <div className="slider-element">
-          <h3>With React...</h3>
+          <h3>Follow me on GitHub for more!</h3>
         </div>
       </Slider>
     </div>

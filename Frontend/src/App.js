@@ -7,10 +7,12 @@ import About from "./Pages/About/About";
 import Footer from "./Layout/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/MainScrollToTop";
 
+
+
 function App() {
   return (
     <>
-      <Header name="BizAds - Board" />
+      <Header name="BizAds - Board v2" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
