@@ -9,7 +9,11 @@
 
 ## This is on going project...
 
-This is Alpha version. Strikethrough text = completed.
+This is Alpha version. 
+
+```
+Strikethrough text = Completed.
+```
 
 **What should you expect?**
 
