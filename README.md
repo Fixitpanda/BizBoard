@@ -9,16 +9,17 @@
 
 ## This is on going project...
 
-**More features will be added soon...**
-
-> This is Alpha version. Strikethrough text = completed.
+This is Alpha version. Strikethrough text = completed.
 
 **What should you expect?**
 
-1. ~~Python (FastAPI) based backend with MySQL database.~~
-2. ~~Full API Integration. (All static data will be erased from react, such as CustomData.)~~
-3. User Panel (Registration / Login / Control Panel)
-4. More pages (Probably)
+> ~~Python (FastAPI) based backend with MySQL database.~~
+
+> ~~Full API Integration. (All static data will be erased from react, such as CustomData.)~~
+
+> User Panel (Registration / Login / Control Panel)
+
+> More pages (Probably)
 
 ## Copyrights / Credits
 
