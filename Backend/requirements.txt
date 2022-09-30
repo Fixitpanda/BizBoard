@@ -1,0 +1,5 @@
+uvicorn~=0.18.3
+fastapi~=0.85.0
+fastapi-utils~=0.2.1
+mysql~=0.0.3
+mysql-connector-python~=8.0.30

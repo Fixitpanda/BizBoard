@@ -12,9 +12,8 @@ function AllItems() {
     const [display, setDisplay] = useState('grid');
 
 
-
     useEffect(() => {
-        fetch("https://rapi.hananaev.tk/")
+        fetch("http://127.0.0.1:8000/")
             .then(res => res.json())
             .then(
                 (result) => {
