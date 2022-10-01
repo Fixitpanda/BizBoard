@@ -9,7 +9,7 @@
 
 ## This is on going project...
 
-This is Alpha version. 
+**Version 2.0 Alpha.**
 
 ```
 Strikethrough text = Completed.
