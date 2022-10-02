@@ -2,9 +2,9 @@ import mysql.connector
 
 try:
     connection = mysql.connector.connect(host="10.0.0.42",
-                                         user="your_mysql_username",
-                                         passwd="your_mysql_password",
-                                         database="your_database_name",
+                                         user="root",
+                                         passwd="139745698",
+                                         database="myreceipts",
                                          )  # #autocommit=True
 
     # Get all posts from database

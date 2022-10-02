@@ -1,2 +1,2 @@
 class StaticData:
-    items_per_page = 36
+    items_per_page = 12

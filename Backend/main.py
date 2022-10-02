@@ -44,6 +44,11 @@ def home():
             "items": sqlCalls.getPosts.json_data}
 
 
+@app.get("/page/{number}")
+def get_post(number: int):
+    return sqlCalls.getPosts.json_data[(number * userData.StaticData.items_per_page)-userData.StaticData.items_per_page:number * userData.StaticData.items_per_page]
+
+
 @app.get("/all-items/")
 def all_items():
     return sqlCalls.getPosts.json_data
