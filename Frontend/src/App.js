@@ -12,7 +12,7 @@ import ScrollToTop from "./Components/ScrollToTop/MainScrollToTop";
 function App() {
   return (
     <>
-      <Header name="BizAds - Board v2" />
+      <Header name="BizBoard v2" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -29,6 +29,7 @@ function AllItems() {
     }, []);
 
 
+    // getting pages numbers, still need to make buttons "previous / next page" and the actual pages with fast-api.
     const getPagesNumbers = value => {
         let content = [];
         for (let i = 1; i < value + 1; i++) {
@@ -38,6 +39,7 @@ function AllItems() {
         return content;
     };
 
+    // index example for later
     // function createPages2() {
     //     let itemList=[];
     //     items.forEach((item,index)=>{
@@ -110,14 +112,11 @@ function AllItems() {
                             <li className="page-item disabled">
                                 <span className="page-link">Previous</span>
                             </li>
-
                             {getPagesNumbers(items.total_pages)}
 
                             <li className="page-item disabled">
                                 <a className="page-link" href="#">Next</a>
                             </li>
-
-
 
                         </ul>
                     </nav>
