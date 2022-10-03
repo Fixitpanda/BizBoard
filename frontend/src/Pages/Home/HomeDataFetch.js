@@ -77,9 +77,9 @@ function AllItems() {
     }
 
     if (error) {
-        return <div className="container">Error: {error.message}</div>;
+        return <div className="container p-1">Error: {error.message}</div>;
     } else if (!isLoaded) {
-        return <div className="container">Loading...</div>;
+        return <div className="container p-1"><img className="loading" src="/loading.gif" alt="loading"/></div>;
     } else {
         return (
             <>
