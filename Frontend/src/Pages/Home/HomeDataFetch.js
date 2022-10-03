@@ -3,15 +3,28 @@ import PostsLook from "../../Layout/Posts/PostsLook";
 import SearchBar from "../../Components/SearchBar/MainSearchBar";
 import "./Home.css";
 
+
+
+const default_api_server = 'https://rapi.hananaev.tk'
+
 function AllItems() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
     const [offers, setOffers] = useState(items);
     const [display, setDisplay] = useState("grid");
+    const [numberOfPages, setNumberOfPages] = useState("0");
+    const [activePage, setActivePage] = useState("1");
+    // const [update, setUpdate] = useState(0); // re-fetching the api on request
+
+
+    // const handleClick = () => {
+    //     setUpdate(update + 1);
+    // };
+
 
     useEffect(() => {
-        fetch("https://rapi.hananaev.tk/")
+        fetch(default_api_server + "/page/" + activePage)
             .then((res) => res.json())
             .then(
                 (result) => {
@@ -26,18 +39,30 @@ function AllItems() {
                     setError(error);
                 }
             );
+    }, [activePage]);
+
+    useEffect(() => {
+        fetch(default_api_server)
+            .then((res) => res.json())
+            .then((apiResult) => setNumberOfPages(apiResult.totalPages)
+            );
     }, []);
 
 
     // getting pages numbers, still need to make buttons "previous / next page" and the actual pages with fast-api.
-    const getPagesNumbers = value => {
+    const getPagesNumbers = () => {
         let content = [];
-        for (let i = 1; i < value + 1; i++) {
-            const item = i;
-            content.push(<li className="page-item"><span className="page-link">{item}</span></li>);
+        for (let i = 1; i < numberOfPages + 1; i++) {
+            const page = i;
+
+            content.push(<li className="page-item" onClick={() => setActivePage(String(page))}><button className="page-link pointer">{page}</button></li>);
+            //
+            // <li className="page-item"> className="page-link" onClick={(e) => setActivePage(page) }" + item}>{item}</a></li>
         }
         return content;
     };
+
+
 
     // index example for later
     // function createPages2() {
@@ -48,9 +73,9 @@ function AllItems() {
     // }
 
     function searchItems(value) {
-        let result = [...items.items];
+        let result = [...items];
         if (value.length > 0) {
-            result = items.items.filter((offer) =>
+            result = items.filter((offer) =>
                 offer.title.toLowerCase().includes(value.toLowerCase())
             );
         }
@@ -68,13 +93,13 @@ function AllItems() {
                     <div className="d-flex justify-content-between container pt-2">
                         <div className="">
                             <button
-                                onClick={(e) => setDisplay("list")}
+                                onClick={() => setDisplay("list")}
                                 className="btn btn-default"
                             >
                                 <i className="bi-list-ul"></i>
                             </button>
                             <button
-                                onClick={(e) => setDisplay("grid")}
+                                onClick={() => setDisplay("grid")}
                                 className="btn btn-default display-type"
                             >
                                 <i className="bi-grid-3x3-gap-fill"></i>
@@ -98,7 +123,7 @@ function AllItems() {
                                 ? offers.map((offers) => (
                                     <PostsLook key={offers.id} data={offers}/>
                                 ))
-                                : items.items.map((offers) => (
+                                : items.map((offers) => (
                                     <PostsLook key={offers.id} data={offers}/>
                                 ))
                         }
@@ -112,11 +137,14 @@ function AllItems() {
                             <li className="page-item disabled">
                                 <span className="page-link">Previous</span>
                             </li>
-                            {getPagesNumbers(items.total_pages)}
+                            {getPagesNumbers()}
 
                             <li className="page-item disabled">
-                                <a className="page-link" href="#">Next</a>
+                                <a className="page-link" href="/">Next</a>
                             </li>
+
+
+
 
                         </ul>
                     </nav>

@@ -39,8 +39,8 @@ app.add_middleware(
 @repeat_every(seconds=60)
 @app.get("/")
 def home():
-    return {"total_items": sqlCalls.getPosts.counter, "items_per_page": userData.StaticData.items_per_page,
-            "total_pages": math.ceil(sqlCalls.getPosts.counter / userData.StaticData.items_per_page),
+    return {"totalItems": sqlCalls.getPosts.counter, "ItemsPerPage": userData.StaticData.items_per_page,
+            "totalPages": math.ceil(sqlCalls.getPosts.counter / userData.StaticData.items_per_page),
             "items": sqlCalls.getPosts.json_data}
 
 

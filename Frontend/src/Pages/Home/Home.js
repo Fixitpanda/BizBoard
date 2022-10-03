@@ -9,7 +9,8 @@ import AllItems from "./HomeDataFetch"
 
 function Home() {
 
-  //
+
+    //
   // // using width and listening in real time to resolution change
   // function useWindowDimensions() {
   //   const [windowDimensions, setWindowDimensions] = useState(
