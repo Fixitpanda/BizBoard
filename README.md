@@ -1,8 +1,15 @@
-# [B](https://github.com/Fixitpanda/biz-ad-board)[izads - Board](https://github.com/Fixitpanda/biz-ad-board) *v2 Alpha*
+# [BizBoard](https://github.com/Fixitpanda/biz-ad-board) *v2 Alpha*
+
+![alt text](https://img.shields.io/badge/Code:-orange) ![alt text](https://img.shields.io/badge/Python-3.10+-blue) ![alt text](https://img.shields.io/badge/React-18.2.0+-blue) ![alt text](https://img.shields.io/badge/Bootstrap-5.2+-blue)
+
+| Version                                                  | URL                                                |
+| -------------------------------------------------------- | -------------------------------------------------- |
+| ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) | [Demo v1](https://fixitpanda.github.io/biz-ad-board/) |
+| ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) |                                                    |
+
+---
 
 **This mini react based website with 3 pages in total(at the moment): "*Home,  Services, About*".**
-
-**DEMO**: https://fixitpanda.github.io/biz-ad-board/
 
 * **Features:** Mobile Support, Slider, Go to Top Button, Services page with: Add/Remove/Status.
 * **Design:** Bootstrap 5, using a react router component fully, perfect for static implementations.
