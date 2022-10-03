@@ -49,18 +49,30 @@ function AllItems() {
         for (let i = 1; i < numberOfPages + 1; i++) {
             const page = i;
 
-            content.push(<li className="page-item" onClick={() => setActivePage(String(page))}><button className="page-link pointer">{page}</button></li>);
+            content.push(<li className="page-item" onClick={() => setActivePage(String(page))}>
+                <button className="page-link pointer">{page}</button>
+            </li>);
         }
         if (Number(activePage) > 1) {
-            previousButton.push(<li className="page-item"><button className="page-link"
-                                                                onClick={() => setActivePage(String(Number(activePage) - 1))}>Previous</button></li>);
+            previousButton.push(<li className="page-item">
+                <button className="page-link"
+                        onClick={() => setActivePage(String(Number(activePage) - 1))}>Previous
+                </button>
+            </li>);
         } else if (Number(activePage) === 1) {
-            previousButton.push(<li className="page-item disabled"><button className="page-link">Previous</button></li>);
+            previousButton.push(<li className="page-item disabled">
+                <button className="page-link">Previous</button>
+            </li>);
         }
         if (Number(numberOfPages) === Number(activePage)) {
-            nextButton.push(<li className="page-item disabled"><button className="page-link">Next</button></li>);
+            nextButton.push(<li className="page-item disabled">
+                <button className="page-link">Next</button>
+            </li>);
         } else {
-            nextButton.push(<li className="page-item"><button onClick={() => setActivePage(String(Number(activePage) + 1))} className="page-link">Next</button></li>);
+            nextButton.push(<li className="page-item">
+                <button onClick={() => setActivePage(String(Number(activePage) + 1))} className="page-link">Next
+                </button>
+            </li>);
         }
         return [content, previousButton, nextButton];
     };
@@ -130,7 +142,7 @@ function AllItems() {
 
                     <nav aria-label="...">
                         <ul className="pagination">
-                           {getPagesNumbers()[1]}  {/* previous*/}
+                            {getPagesNumbers()[1]} {/* previous*/}
                             {getPagesNumbers()[0]} {/* pages */}
                             {getPagesNumbers()[2]} {/* pages */}
                         </ul>

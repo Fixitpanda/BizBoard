@@ -4,19 +4,19 @@ import "./Home.css";
 
 function Home() {
 
-  return (
-    <>
-      <div className="col">
-        <SliderData />
+    return (
+        <>
+            <div className="col">
+                <SliderData/>
 
-      </div>
+            </div>
 
-      < AllItems />
+            < AllItems/>
 
-    </>
+        </>
 
 
-  );
+    );
 }
 
 export default Home;

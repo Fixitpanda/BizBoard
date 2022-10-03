@@ -19,8 +19,10 @@ export default function Footer() {
 
             </div>
 
-            <div >© {getCurrentYear()} <a className="link-info" href="/">{domain}</a>. All rights reserved.</div>
-            <div className="fw-light">Made by George Khananaev - <a className="link-info" href="https://github.com/Fixitpanda/biz-ad-board">GitHub</a></div>
+            <div>© {getCurrentYear()} <a className="link-info" href="/">{domain}</a>. All rights reserved.</div>
+            <div className="fw-light">Made by George Khananaev - <a className="link-info"
+                                                                    href="https://github.com/Fixitpanda/biz-ad-board">GitHub</a>
+            </div>
 
 
         </footer>
