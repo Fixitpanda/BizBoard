@@ -32,6 +32,7 @@ export default function Posts() {
                    placeholder='Search...'
                    onChange={(e) => searchItems(e.target.value)}
             />
+
             <Card.Group itemsPerRow={3} style={{ marginTop: 20 }}>
                 {searchInput.length > 1 ? (
                     filteredResults.map((items) => {

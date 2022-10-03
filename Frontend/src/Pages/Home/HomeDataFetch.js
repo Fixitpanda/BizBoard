@@ -4,7 +4,6 @@ import SearchBar from "../../Components/SearchBar/MainSearchBar";
 import "./Home.css";
 
 
-
 const default_api_server = 'https://rapi.hananaev.tk'
 
 function AllItems() {
@@ -15,13 +14,6 @@ function AllItems() {
     const [display, setDisplay] = useState("grid");
     const [numberOfPages, setNumberOfPages] = useState("0");
     const [activePage, setActivePage] = useState("1");
-    // const [update, setUpdate] = useState(0); // re-fetching the api on request
-
-
-    // const handleClick = () => {
-    //     setUpdate(update + 1);
-    // };
-
 
     useEffect(() => {
         fetch(default_api_server + "/page/" + activePage)
@@ -109,12 +101,14 @@ function AllItems() {
                         </div>
 
                         <div className="d-flex justify-content-end search-bar">
-                            <div className="mx-2 col-8">
+                            <div className="mx-2 col-12">
                                 <SearchBar search={searchItems}/>
                             </div>
-                            <div className="col-5 advanced-search-bar">
-                                <button className="form-control">Advanced Search</button>
-                            </div>
+
+                            {/*<div className="col-5 advanced-search-bar">*/}
+                            {/*    <button className="form-control">Advanced Search</button>*/}
+                            {/*</div>*/}
+
                         </div>
                     </div>
 
