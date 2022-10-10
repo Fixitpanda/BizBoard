@@ -4,8 +4,7 @@ import "./Home.css";
 
 function Home() {
 
-    return (
-        <>
+    return (<>
             <div className="col">
                 <SliderData/>
 
