@@ -19,13 +19,40 @@ def add_id_to_dic():
 
 inventory = add_id_to_dic()
 
-app = FastAPI()
+description = '''Complete BizBoard API calls for the frontend applications'''
 
-origins = [
-    "http://localhost:3000",
-    "http://10.0.0.1:3000",
-    "https://hananaev.tk",
+tags_metadata = [
+    {
+        "name": "Home",
+        "description": "Get everything you need for default home page",
+    },
+    {
+        "name": "Pages",
+        "description": "Get minimized articles by pages numbers",
+    },
+    {
+        "name": "Article",
+        "description": "Get entire article by article ID",
+    },
 ]
+
+app = FastAPI(title="BizBoard API",
+              description=description,
+              version="0.0.1",
+              # terms_of_service="http://example.com/terms/",
+              openapi_tags=tags_metadata,
+              contact={
+                  "name": "George Khananaev",
+                  "url": "http://github.com/fixitpanda",
+                  "email": "george.khananaev@gmail.com",
+              },
+              # license_info={
+              #     "name": "Apache 2.0",
+              #     "url": "https://www.apache.org/licenses/LICENSE-2.0.html",
+              # },
+              )
+
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -37,25 +64,25 @@ app.add_middleware(
 
 
 @repeat_every(seconds=60)
-@app.get("/")
-def home():
+@app.get("/", tags=["Home"])
+def home_page():
     return {"totalItems": sqlCalls.getPosts.counter, "ItemsPerPage": userData.StaticData.items_per_page,
             "totalPages": math.ceil(sqlCalls.getPosts.counter / userData.StaticData.items_per_page),
             "items": sqlCalls.getPosts.json_data}
 
 
-@app.get("/page/{number}")
-def get_post(number: int):
+@app.get("/page/{number}", tags=["Pages"])
+def get_page_by_page_number(number: int):
     return sqlCalls.getPosts.json_data[(number * userData.StaticData.items_per_page)-userData.StaticData.items_per_page:number * userData.StaticData.items_per_page]
 
 
-@app.get("/all-items/")
-def all_items():
+@app.get("/all-posts/", tags=["Home"])
+def get_all_posts():
     return sqlCalls.getPosts.json_data
 
 
-@app.get("/get-post/{post_id}")
-def get_post(post_id: int = Path(None, description="Inset the ID of the item you like to view")):
+@app.get("/get-post/{post_id}", tags=["Article"])
+def get_post_by_id(post_id: int = Path(None, description="Inset the ID of the item you like to view")):
     return inventory[post_id]
 
 
@@ -75,9 +102,9 @@ def get_post(post_id: int = Path(None, description="Inset the ID of the item you
 #         return post_title
 
 
-@app.get("/about")
-def about():
-    return {"message": "This is about page"}
+# @app.get("/about")
+# def about():
+#     return {"message": "This is about page"}
 
 
 # @app.on_event("startup")
