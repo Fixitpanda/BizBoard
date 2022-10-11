@@ -2,9 +2,9 @@
 
 ![alt text](https://img.shields.io/badge/Code:-orange) ![alt text](https://img.shields.io/badge/Python-3.10+-blue) ![alt text](https://img.shields.io/badge/React-18.2.0+-blue) ![alt text](https://img.shields.io/badge/Bootstrap-5.2+-blue)
 
-| Version                                                  | URL   |
-| -------------------------------------------------------- | ----- |
-| ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) | N/A   |
+| Version                                                  | URL                               |
+| -------------------------------------------------------- | --------------------------------- |
+| ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) | N/A                               |
 | ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) | [DEMO](https://bizboard.hananaev.tk) |
 
 ---
@@ -16,21 +16,37 @@
 
 ## This is on going project...
 
-**Version 2.0 Alpha.**
+```
+More features will be added, I will continue the work until the website will be fully functional.
+
+If you have special requests please email these to me, you can see my email in the profile page. 
+Of course I will consider adding these only if these relevant to this on going project...
+```
+
+## How to use?
 
 ```
-Strikethrough text = Completed.
+1. git clone https://github.com/Fixitpanda/BizBoard.git
+
+2. go to BizBoard/frontend
+3. npm install
+4. go to BizBoard/backend
+5. pip install -r requirements.txt (better to install inside venv)
+6. create "credentials.py" file and fill it with your information as shown below:
+Example:
+    class myCredentials:
+        host = "your_mysql_server_ip"
+        user = "your_mysql_username"
+        passwd = "your_mysql_password"
+        database = "your_database_name"
+
+7. Inside MySql, you should create tables, I will upload sql sample later.
+8. python main.py
+9. replace inside react pages, api server with your own IP
+
+Now it should be running. 
+The process is a bit complicated now... Once project finished I will dockerize it and you can deploy with single command.
 ```
-
-**What should you expect?**
-
-> ~~Python (FastAPI) based backend with MySQL database.~~
-
-> ~~Full API Integration. (All static data will be erased from react, such as CustomData.)~~
-
-> User Panel (Registration / Login / Control Panel)
-
-> More pages (Probably)
 
 ## Copyrights / Credits
 
