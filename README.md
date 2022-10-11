@@ -42,7 +42,7 @@ Example:
 
 7. Inside MySql, you should create tables, I will upload sql sample later.
 8. python main.py
-9. replace inside react pages, api server with your own IP
+9. go to BizBoard/frontend/src/Pages and replace inside home and articles the main fetch url, with your own api address.
 
 Now it should be running. 
 The process is a bit complicated now... Once project finished I will dockerize it and you can deploy with single command.
