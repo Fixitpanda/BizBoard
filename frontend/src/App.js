@@ -8,7 +8,6 @@ import Footer from "./Layout/Footer/Footer";
 import ScrollToTop from "./Components/ScrollToTop/MainScrollToTop";
 import Article from "./Pages/Article/Article";
 
-
 function App() {
     return (
         <>

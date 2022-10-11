@@ -1,10 +1,11 @@
+from credentials import myCredentials
 import mysql.connector
 
 try:
-    connection = mysql.connector.connect(host="10.0.0.131",
-                                         user="root",
-                                         passwd="139745698",
-                                         database="myreceipts",
+    connection = mysql.connector.connect(host=myCredentials.host,
+                                         user=myCredentials.user,
+                                         passwd=myCredentials.passwd,
+                                         database=myCredentials.database,
                                          )  # #autocommit=True
 
     # Get all posts from database
