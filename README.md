@@ -11,7 +11,8 @@
 
 **This mini react based website with 3 pages in total(at the moment): "*Home,  Services, About*".**
 
-* **Features:** Mobile Support, Slider, Go to Top Button, Services page with: Add/Remove/Status.
+* **Technology:** Python FastAPI Server with MySql database & React.JS as frontend.
+* **Features:** Dynamic Pages, Mobile Support, Slider, Go to Top Button, Services page with: Add/Remove/Status.
 * **Design:** Bootstrap 5, using a react router component fully, perfect for static implementations.
 
 ## This is on going project...
