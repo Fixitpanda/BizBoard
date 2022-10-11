@@ -16,12 +16,9 @@
 
 ## This is on going project...
 
-```
-More features will be added, I will continue the work until the website will be fully functional.
-
-If you have special requests please email these to me, you can see my email in the profile page. 
-Of course I will consider adding these only if these relevant to this on going project...
-```
+More features will be added. I am currently working on this project. (This projects will continue until the result is fully functional)
+If you have special requests to me, please email me. (You can get my email from the profile page.)
+I won't add any requests, of course I will consider adding the most relevant only.
 
 ## How to use?
 
