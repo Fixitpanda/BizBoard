@@ -4,7 +4,7 @@ import SearchBar from "../../Components/SearchBar/MainSearchBar";
 import "./Home.css";
 
 
-const default_api_server = 'https://rapi.hananaev.tk'
+const default_api_server = 'https://rapioracle.hananaev.tk'
 
 function AllItems() {
     const [error, setError] = useState(null);
