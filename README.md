@@ -2,10 +2,10 @@
 
 ![alt text](https://img.shields.io/badge/Code:-orange) ![alt text](https://img.shields.io/badge/Python-3.10+-blue) ![alt text](https://img.shields.io/badge/React-18.2.0+-blue) ![alt text](https://img.shields.io/badge/Bootstrap-5.2+-blue)
 
-| Version                                                  | URL |
-| -------------------------------------------------------- |-----|
-| ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) |     |
-| ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) |     |
+| Version                                                  | URL   |
+| -------------------------------------------------------- | ----- |
+| ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) | N/A   |
+| ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) | [DEMO](https://bizboard.hananaev.tk) |
 
 ---
 
