@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Error404 from "../404/404";
 import GoBack from "../../Components/SiteNavigator/GoBack";
-
+import "./Article.css";
 
 
 function Article() {
@@ -24,11 +24,7 @@ function Article() {
     }, []);
 
     function renderApiToHtml(yourApiCall) {
-        const fullDescription = yourApiCall;
-
-        return (
-        <div className="container" dangerouslySetInnerHTML={ { __html: fullDescription } }></div>
-        );
+        return <div className="container my-3" dangerouslySetInnerHTML={{__html: yourApiCall}}></div>;
     }
 
     if (error) {
@@ -36,27 +32,34 @@ function Article() {
     } else if (!isLoaded) {
         return (<div className="container p-1"><img className="loading" src="/loading.gif" alt="loading"/></div>);
     } else if (typeof items.id === "undefined") {
-        return <div className="container"><Error404/> <div><GoBack/></div></div>;
+        return <div className="container"><Error404/>
+            <div><GoBack/></div>
+        </div>;
     } else {
         return (
 
 
             <div className="my-3 container">
-                {console.log(items.id)}
-                <div className="d-flex flex-row">
+                <div className="article-header d-flex ">
                     <div className="m-1">
-                        <img src={items.image_url} width={350} height={350} alt="Main"/>
+                        <img className="main-photo img-fluid img-thumbnail" src={items.image_url} alt="Main"/>
                     </div>
 
                     <div className="m-3">
-                        <div className="d-flex flex-row"><h1>{items.title}</h1>
-                            <div className="text-primary p-1">({items.id})</div>
+                        <div className="d-flex flex-row">
+                            <div><h1>{items.title}</h1></div>
+                            <div className="text-primary pt-1"> [ID: {items.id}]</div>
                         </div>
-                        <div><b>{items.description}</b></div>
-                        <div>{items.phone}</div>
-                        <div>{items.address}</div>
-                    </div>
 
+                        <div className="p-2">
+
+                            <div><b>{items.description}</b></div>
+                            <div>{items.phone}</div>
+                            <div>{items.address}</div>
+                        </div>
+
+
+                    </div>
 
 
                 </div>

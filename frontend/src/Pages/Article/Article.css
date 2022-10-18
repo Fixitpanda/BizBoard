@@ -1,0 +1,21 @@
+@media only screen and (min-width: 601px) {
+    .main-photo {
+
+        max-width: 300px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-photo {
+
+        max-width: 100% !important;
+
+    }
+
+    .article-header {
+        flex-direction: column !important;
+    }
+
+}

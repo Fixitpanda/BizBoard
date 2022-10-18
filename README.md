@@ -5,7 +5,7 @@
 | Version                                                  | URL                               |
 | -------------------------------------------------------- | --------------------------------- |
 | ![alt text](https://img.shields.io/badge/Demo-v1.0-orange) | N/A                               |
-| ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) | [DEMO](https://bizboard.hananaev.tk) |
+| ![alt text](https://img.shields.io/badge/Demo-v2.0-orange) | [DEMO](https://bizboard.gdemo.tk) |
 
 ---
 
